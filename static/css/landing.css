@@ -1,0 +1,110 @@
+html {
+    font-family: 'Arsenal', sans-serif !important;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+#bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/mads-schmidt-rasmussen-6YmzwamGzCg-unsplash.jpg');
+    /*background-image: url('../img/james-zwadlo-5RRseu8n_5s-unsplash.jpg');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    animation: fadeInPage ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 40vh;
+    color: black;
+    font-family: sans-serif;
+}
+
+h1 {
+    animation: fadeInHeader ease 6s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+p {
+    animation: fadeInText ease 7s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+input {
+    float: right;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    animation: fadeInButton ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+input:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes fadeInPage { 
+    0% { 
+        opacity: 0; 
+    } 
+    
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

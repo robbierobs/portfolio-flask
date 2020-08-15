@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block head %} 
+  <link rel="stylesheet" href="static/css/boro.css" type="text/css">
+  <title>Boro Bar</title>
+{% endblock %}
+{% block body %}
+  <header class="header">
+    <div class="logo-box">
+      <img src="{{ url_for('static', filename='img/boro/logo.png')}}" alt="logo" class="logo">
+    </div>
+
+    <h1 class="heading-primary">
+      <!--<span class="heading-primary-main">Award-winning wings</span>
+      <span class="heading-primary-sub">Lorem ipsum dolor sit amet.</span> -->
+    </h1>
+    <div class="buttons">
+      <a href="#" class="btn">Menu</a>
+      <a href="#" class="btn">About</a>
+      <a href="#" class="btn">Contact</a>
+    </div>
+    <div class="address">
+      <div class="harrisburg">
+        <h2>Harrisburg</h2>
+        <h3> 4425 N Front St <br>
+             Harrisburg, PA <br>
+             717-717-7171 </h3>
+      </div>
+      <div class="hummelstown">
+        <h2>Hummelstown</h2>
+        <h3>401 E Main St. <br>
+        Hummelstown PA <br>
+        717-717-7171</h3>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="abouttop">
+      <h3>Lorem ipsum dolor sit amet.</h3>
+    </div>
+      <div class="about-grid-first">
+          <div>
+            <img src="{{ url_for('static', filename='img/boro/best2018.png')}}"  alt="best of 2018" class="award">
+          </div>
+          <div class=""></div>
+          <div>
+            <img src="{{ url_for('static', filename='img/boro/reader2018.png') }}" alt="readersaward2018" class="award">
+          </div>
+      </div>
+<!--      <div class="about-grid-second">
+        <div>
+          <img src="./img/reader2018.png" alt="2018 readers award" class="award">
+        </div>
+        <div style="width:600px">
+          <h3>Reader's Award 2018</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis molestiae laborum ullam, doloribus quae ipsam. Accusantium dolor est dolorum nostrum.</p>
+        </div>
+      </div> -->
+      <div class="about-grid-second">
+        <div class="div">
+          <h3>Simply the Best 2018</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, sunt.</p>
+        </div>
+        <div class="space"></div>
+        <div class="div">
+          <h3>Reader's Award 2018</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, modi!</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+  </section>
+
+  <section class="contact">
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fuga minima, sed natus laborum eaque nam temporibus ipsam quo! Repudiandae?</h3>
+    <div class="contact-grid">
+      <div class="facebook">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga praesentium in dolor deserunt consectetur numquam voluptatem quidem ducimus commodi ad.</p>
+      </div>
+      <div class="email">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione labore laudantium aut, pariatur voluptatibus quis rerum corporis in provident.</p>
+      </div>
+      <div class="phone">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perspiciatis maxime ab quam explicabo obcaecati, fugiat labore, deserunt temporibus itaque?</p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
